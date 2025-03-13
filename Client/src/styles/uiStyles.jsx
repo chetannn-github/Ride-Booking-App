@@ -26,7 +26,7 @@ export const uiStyles = StyleSheet.create({
         shadowColor: '#000',
         elevation: 10,
         alignItems: 'center',
-        padding: 6
+        padding: 9
     },
     dot: {
         width: 6,
@@ -51,7 +51,7 @@ export const uiStyles = StyleSheet.create({
     },
     locationText: {
         width: '86%',
-        fontSize: RFValue(10),
+        fontSize: RFValue(11),
         fontFamily: 'Regular',
         color: Colors.text,
         opacity: 0.8
