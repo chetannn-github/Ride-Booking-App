@@ -79,7 +79,7 @@ const Main = () => {
   return (
     <View style={commonStyles.container}>
       <Image style={splashStyles.img} source={require("@/assets/images/logo_t.png")}></Image>
-      <Link href={"/role"}> Go to role</Link>
+      
     </View>
   )
 }
