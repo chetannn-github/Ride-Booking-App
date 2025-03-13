@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-, "src/app/index.jsx", "src/app/_layout.jsx", "src/app/role.jsx", "src/app/customer/auth.jsx", "src/app/rider/auth.jsx"  ]
+, "src/app/index.jsx", "src/app/_layout.jsx", "src/app/role.jsx", "src/app/customer/auth.jsx", "src/app/rider/auth.jsx", "src/styles/authStyles.jsx", "src/styles/commonStyles.jsx", "src/styles/homeStyles.jsx", "src/styles/locationStyles.jsx", "src/styles/mapStyles.jsx", "src/styles/modalStyles.jsx", "src/styles/riderStyles.jsx", "src/styles/rideStyles.jsx", "src/styles/roleStyles.jsx", "src/styles/splashStyles.jsx", "src/styles/uiStyles.jsx"  ]
 }
