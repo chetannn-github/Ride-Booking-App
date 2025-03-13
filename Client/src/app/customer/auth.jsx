@@ -1,4 +1,4 @@
-import { View, Text, SafeAreaView, Image } from 'react-native'
+import { View, Text, SafeAreaView, Image, Alert } from 'react-native'
 import React, { useState } from 'react'
 import { authStyles } from '@/styles/authStyles'
 import { ScrollView } from 'react-native-gesture-handler'
@@ -6,21 +6,28 @@ import { commonStyles } from '@/styles/commonStyles'
 import PhoneInput from "@/components/shared/PhoneInput"
 import { useWS } from '@/service/WSProvider'
 import CustomButton from "@/components/shared/CustomButton"
+import { signin } from '@/service/authService'
 
 const CustomerAuth = () => {
   const {updateAccessToken} = useWS();
   const [phone,setPhone] = useState("");
   const [loading,setLoading] = useState(false);
-  const [disabled,setDisabled] = useState(true);
+  const [disabled,setDisabled] = useState(false);
 
   
 
   const handleNext = async()=>{
     try {
-      if(disabled){return;}
-
+      if(disabled || loading){return;}
+      if(phone.length !== 10){
+        Alert.alert("buddy enter your phone number");
+        return;
+      }
       //api call kregee a
+      setLoading(true);
 
+      signin({role:'customer',phone},updateAccessToken)
+      setLoading(false);
       
     } catch (error) {
       
