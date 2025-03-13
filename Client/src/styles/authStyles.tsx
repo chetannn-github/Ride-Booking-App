@@ -8,7 +8,7 @@ export const authStyles = StyleSheet.create({
         resizeMode: 'contain'
     },
     container: {
-        padding: 12,
+        padding: 10,
         flex: 1,
         backgroundColor: Colors.background
     },

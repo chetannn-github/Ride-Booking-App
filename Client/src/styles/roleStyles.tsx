@@ -6,11 +6,12 @@ export const roleStyles = StyleSheet.create({
         flex: 1,
         backgroundColor: Colors.background,
         alignItems: 'center',
+        justifyContent:"flex-start"
     },
     logo: {
         resizeMode: 'contain',
         height: 60,
-        marginTop: 120,
+        marginTop:50,
         marginBottom: 40
     },
     card: {
@@ -34,9 +35,12 @@ export const roleStyles = StyleSheet.create({
     },
     image: {
         height: 120,
+    
         borderTopLeftRadius: 15,
         borderTopRightRadius: 15,
         width: '100%',
+        resizeMode:"cover",
+       
     },
     description: {
         fontSize: 14,
